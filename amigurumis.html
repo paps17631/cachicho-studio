@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cachicho Studio</title>
+
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #009688;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    header img {
+      width: 80px;
+      height: auto;
+      display: inline-block;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      color: #ffc107;
+      font-size: 1.2em;
+      margin: 0;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .galeria img {
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #009688;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .boton {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #e0a800;
+    }
+
+    footer {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 60px;
+      }
+
+      header p {
+        position: static;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn.openai.com/chatgpt-logos/cachicho_studio_kawaii_cat_yarn_logo.png" alt="Logo Cachicho Studio" />
+    <h1>Cachicho Studio</h1>
+    <p>Tejidos con alma y bigotes</p>
+  </header>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Hola, soy [Tu Nombre] y me encanta crear personajes tejidos a mano. Cada uno tiene su historia, ¡y mi gato negro me acompaña en cada puntada!</p>
+  </section>
+
+  <section>
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/200?text=Amigurumi+1" alt="Amigurumi 1" />
+      <img src="https://via.placeholder.com/200?text=Amigurumi+2" alt="Amigurumi 2" />
+      <img src="https://via.placeholder.com/200?text=Amigurumi+3" alt="Amigurumi 3" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Contáctame</h2>
+    <p>¿Te gustó algún amigurumi? Escríbeme o sígueme:</p>
+    <a class="boton" href="mailto:tuemail@example.com">Enviar correo</a><br /><br />
+    <a class="boton" href="https://instagram.com/tucuenta" target="_blank">Instagram</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cachicho Studio | Hecho con ♥ y un gato negro</p>
+  </footer>
+</body>
+</html>
